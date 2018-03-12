@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD_q6pvc0QoDij9y723dYWxlOdTHT5FZ2Q",
+    authDomain: "motoweb-c778c.firebaseapp.com",
+    databaseURL: "https://motoweb-c778c.firebaseio.com",
+    projectId: "motoweb-c778c",
+    storageBucket: "motoweb-c778c.appspot.com",
+    messagingSenderId: "704779118050"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="Conexion.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="estilos/sere.css">
+        <title>Inicia sesion Administrador</title>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="caja">
+                <div class="insesion">
+                    <img src="ImgIcons/if_Rounded-31_2024644.png" class="insi">
+                    <form class="insi"> 
+                        <label>Correo:</label><br>
+                        <input type="email" id="correo" name="email" style="width: 100%" required=""><br>
+                            <label>Contraseña:</label><br>
+                            <input type="password" id="contraseña" name="password" style="width: 100%" required=""><br>
+                    </form>
+                    <button type="button" onclick="ingresar()" class="insi">Ingresarr</button>
+                    <br>
+                    <p class="regis">
+                        Si deseas agregar otro administrador registralo <a href="Registro.html">aqui</a></p>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script  src="js/bootstrap.min.js"></script>
+    </body>
+</html>
